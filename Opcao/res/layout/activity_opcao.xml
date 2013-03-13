@@ -15,17 +15,44 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal" >
-            
-	        <ImageView
-	            android:id="@+id/imageView1"
+
+            <ImageView
+                android:id="@+id/cabecalho1"
 	            android:layout_width="match_parent"
-	            android:layout_height="match_parent"
-	            android:src="@drawable/bar_beer" />
+                android:layout_height="match_parent"
+                android:src="@drawable/bar_beer" />
+	        
+	        <ImageView
+	            android:id="@+id/cabecalho2"
+	            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+	            android:src="@drawable/bar_stool" />
+	        
+	        <ImageView
+	            android:id="@+id/cabecalho3"
+	            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+	            android:src="@drawable/cinema" />
+	        
+	        <ImageView
+	            android:id="@+id/cabecalho4"
+	            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+	            android:src="@drawable/restaurant" />
+	        
+	        <ImageView
+	            android:id="@+id/cabecalho4"
+	            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+	            android:src="@drawable/eventos" />
+	        
         </LinearLayout>
     </HorizontalScrollView>
+    
+    
     <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
        android:orientation="horizontal">
 
         <TextView
@@ -33,21 +60,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultados :"
+            android:textSize="10sp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
         
     </LinearLayout>
-    <!-- ListView  -->
-    <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
-    </LinearLayout>
     
+    
+    <!-- ListView  INICIO -->
+    <LinearLayout
+
+       android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="#FFFFFFFF"
+       >
+        
+        <ListView        
+            android:id="@+id/ListView1"        
+            android:layout_height="wrap_content"        
+            android:layout_width="fill_parent">    
+        </ListView>
+        
+    </LinearLayout>
+     <!-- ListView  FIM -->
+     
     <!-- Radape  -->
     <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:orientation="vertical">
+       android:orientation="vertical">  
+          
     </LinearLayout>
     
     
